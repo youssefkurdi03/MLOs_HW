@@ -1,11 +1,9 @@
-# MLOps Force Trigger v1.5
 import hashlib
 
 
 def get_hash_bucket(input_string, num_buckets=1000):
     """
     Hashes an input string into a fixed number of buckets.
-    v1.4 - Final Fix
     """
     if not input_string:
         return 0
