@@ -1,6 +1,7 @@
 import hashlib
 
 
+# Final Build v3.0
 def get_hash_bucket(input_string, num_buckets=1000):
     """
     Hashes an input string into a fixed number of buckets.
