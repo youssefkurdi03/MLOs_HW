@@ -1,6 +1,9 @@
+# MLOps Fix Build v1.3
+from src.features import get_hash_bucket
+
+
 def test_hashing_logic():
-    """Requirement: Fast, isolated test with no external dependencies."""
-    input_str = "user_123"
-    result = hash(input_str) % 1000
+    """Requirement: Fast, isolated unit test."""
+    result = get_hash_bucket("user_123")
     assert isinstance(result, int)
     assert 0 <= result < 1000
