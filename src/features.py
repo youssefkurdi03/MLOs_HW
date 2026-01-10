@@ -2,7 +2,7 @@ import hashlib
 
 
 def get_hash_bucket(input_string, num_buckets=1000):
-    """Hashes an input string into a fixed number of buckets. v3.2"""
+    """Hashes an input string into a fixed number of buckets. v4.0"""
     if not input_string:
         return 0
     hash_value = hashlib.md5(str(input_string).encode()).hexdigest()
